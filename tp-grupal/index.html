@@ -1,76 +1,57 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trabajo grupal</title>
+      <link rel="stylesheet" href="/styles.css">
+      <script src="./index.js"></script>
 </head>
-
 <body>
 
     <form>
         <fieldset>
-<h1>Datos</h1>
-<br><br>
-
+            <h1>Datos</h1>
+            <br><br>
 
             <label for="Nombre">Nombre</label>
-            <input type="text" name="Nombre" id="a">
+            <input type="text" name="Nombre" id="a" minlength="2" maxlength="20" required>
             <br><br>
 
             <label for="Apellido">Apellido</label>
-            <input type="text" name="Apellido" id="b">
+            <input type="text" name="Apellido" id="b" minlength="2" maxlength="25" required>
             <br><br>
 
             <label for="Edad">Edad</label>
-            <input type="text" name="Edad" id="c">
+            <input type="number" name="Edad" id="c" min="18" max="120" required>
             <br><br>
 
             <label for="DNI">DNI</label>
-            <input type="text" name="DNI" id="d">
+            <input type="text" name="DNI" id="d" minlength="7" required>
             <br><br>
 
             <label for="Email">Email</label>
-            <input type="email" name="Email" id="f">
+            <input type="email" name="Email" id="f" required>
             <br><br>
 
             <label for="Cargar"></label>
-            <input type="button" name="Cargar" value="Cargar">
-
-
+            <input type="button" name="Cargar" value="Cargar" >
+        </fieldset>
     </form>
-
 
     <br><br><br>
     <table>
         <caption>Tabla</caption>
         <tr>
             <th>Nombre</th>
-
-
             <th>Apellido</th>
-
-
             <th>Edad</th>
-
-
             <th>Dni</th>
-
-
             <th>Correo Electronico</th>
-
-
         </tr>
-
-
-
     </table>
 
-    </fieldset>
-
-
+   
 </body>
 
 </html>
